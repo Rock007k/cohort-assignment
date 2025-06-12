@@ -22,7 +22,7 @@ app.post('/post', (req,res )=>{
         res.status(200).json({'msg':`Hello + ${body}`});
     }else{
         res.status(411).json({'msg':`Internal Server Error + ${body}`});
-    }
+    };
 })
 
 app.listen(3008);
